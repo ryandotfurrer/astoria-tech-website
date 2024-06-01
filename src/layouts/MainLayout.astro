@@ -1,4 +1,5 @@
 ---
+import RSSButton from '../components/RSSButton.astro'
 import Layout from './Layout.astro'
 
 type Props = {
@@ -12,4 +13,7 @@ const {title, bodyClass = []} = Astro.props
   <div class="md:w-[700px] px-10 m-auto">
     <slot />
   </div>
+  <span class="md:w-[700px] flex justify-end mx-auto pr-4 sticky bottom-4">
+    <RSSButton />
+  </span>
 </Layout>

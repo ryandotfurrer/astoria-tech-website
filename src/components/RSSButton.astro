@@ -1,0 +1,9 @@
+---
+import {Image} from 'astro:assets'
+import rssIcon from '../assets/images/rss-icon.svg'
+---
+
+<a href="https://astoria.app/rss.xml" class="flex p-7 items-center justify-center rounded-full bg-yellow-400 h-12 w-12">
+  <span class="sr-only">Subscribe to our</span>
+  <Image loading="eager" src={rssIcon} alt="RSS Feed" class="mt-2 max-w-12 max-h-12" />
+</a>
